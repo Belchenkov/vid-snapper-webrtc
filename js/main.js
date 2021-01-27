@@ -16,10 +16,9 @@ const photoFIlter = document.getElementById("photoFIlter");
 navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then(stream => {
         // Link to the video source
-        video.srcObject = stream;
-        console.log(video);
+        //video.srcObject = stream;
         // Play Video
-        video.play();
+        //video.play();
     })
     .catch(err => {
         console.error(`Error: ${err}`);
