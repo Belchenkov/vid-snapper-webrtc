@@ -14,7 +14,14 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>VidSnapper</h1>
+        <h1>
+            <img
+                src="https://img.icons8.com/plasticine/50/000000/video-call.png"
+                alt="logo"
+                class="logo"
+            />
+            <span>VidSnapper</span>
+        </h1>
     </div>
     <div class="top-container">
         <video src="" id="video">Stream not availible...</video>
@@ -22,16 +29,16 @@
             Take Photo
             <i class="fas fa-camera"></i>
         </button>
-        <select id="photo-filter">
+        <select id="photo-filter" class="select-filter">
             <option value="none">Normal</option>
             <option value="grayscale(100%)">Grayscale</option>
             <option value="sepia(100%)">Sepia</option>
             <option value="invert(100%)">Invert</option>
             <option value="hue-rotate(90deg)">Hue</option>
             <option value="blur(10px)">Blur</option>
-            <option value="contrast(200%)"></option>
+            <option value="contrast(200%)">Contrast</option>
         </select>
-        <button id="clear-button">
+        <button id="clear-button" class="btn btn-danger">
             Clear
             <i class="fas fa-trash-alt"></i>
         </button>
