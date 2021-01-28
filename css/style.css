@@ -1,9 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Titillium+Web:wght@400;700&display=swap');
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg.png");
+    overflow-x: hidden;    
+}
+
+.navbar {
+    background: #333;
+    padding: 15px;
+    height: 40px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(226, 12, 12, 0.5);
+}
+
+.navbar h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(226, 12, 12, 0.5);
+    font-family: 'Hanalei', cursive;
+}
+
+.navbar .logo {
+    margin-right: 10px;
+}
+
+.top-container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+#video {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform .3s ease;
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn i {
+    margin-left: 5px;
+}
+
+.btn-dark {
+    background-color: #3b4a8a;
+    color: #fff;
+    border: #666 1px solid;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+}
+
+.btn-danger {
+    background-color: #9b3636;
+    color: #fff;
+    border: #c82e2e 1px solid;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+}
+
+.select-filter {
+    height: 40px;
+    background: #333;
+    color: #fff;
+    padding: 6px;
+    width: 100%;
+    border: 1px #666 solid;
+    margin-bottom: 10px;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.select-filter:focus {
+    outline: none;
 }
 
 #canvas {
     display: none;
+}
+
+.bottom-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 10px;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#photos img {
+    width: 100%;
+    border: 3px #fff solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
